@@ -1,0 +1,50 @@
+.hero {
+    min-height: calc(100vh - 62px);
+    background: var(--primaryColor);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .hero-banner {
+    text-align: center;
+    color: var(--mainWhite);
+    padding: 0 2rem;
+  }
+  .hero-title {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 0.4rem;
+  }
+  .hero-text {
+    width: 85%;
+    margin: 0 auto;
+    letter-spacing: var(--mainSpacing);
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  @media screen and (min-width: 768px) {
+    .hero {
+      background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(32, 112, 8, 0.7)),
+          to(rgba(0, 0, 0, 0.7))
+        ),
+        url("../images/main.jpg") center/cover no-repeat fixed;
+      background: linear-gradient(rgba(32, 112, 8, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../images/main.jpg") center/cover no-repeat fixed;
+    }
+    .hero-title {
+      font-size: 4.5rem;
+    }
+    .hero-text {
+      width: 70%;
+    }
+  }

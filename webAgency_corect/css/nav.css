@@ -9,8 +9,8 @@ nav ul {
     text-decoration: none;
     display: block;
     text-align: center;
-    font-size: 20px;
-    padding: 15px 25px;
+    font-size: 1.4rem;
+    padding: 0.8rem 1.2rem;
     color: var(--primaryColor);
   }
   
@@ -22,7 +22,7 @@ nav ul {
     display: flex;
     text-transform: uppercase;
     justify-content: space-between;
-    font-size: 40px;
+    font-size:1.4rem;
     background: var(--primaryColor);
     color: var(--mainDark);
     font-style: italic;

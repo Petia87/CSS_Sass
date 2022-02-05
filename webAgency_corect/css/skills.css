@@ -1,7 +1,7 @@
 
 
 /*skills section*/
-#skills {
+.skills {
   padding: 4rem 0;
   background-color: var(--mainDark);
 }

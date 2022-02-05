@@ -1,31 +1,33 @@
-#banner {
-    min-height: 90vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background-banner.jpg);
-    background-attachment: fixed;
-    background-position:bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-  }
-  
-  .banner-title {
-    color: var(--mainWhite);
-    font-style: italic;
-   
-  }
-  
-  .banner-underline {
-    width: 12.5rem;
-    border: 3px solid var(--primaryColor);
-    margin: 0.6rem auto 1.2rem auto;
-  }
-  .banner-text{
-    margin-bottom: 0;
-  }
-  .banner-btn {
-    display: flex;
-    justify-content: space-between;
-  }
+.banner {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background-banner.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.banner-title {
+  color: var(--mainWhite);
+  font-style: italic;
+
+}
+
+.banner-underline {
+  width: 12.5rem;
+  border: 3px solid var(--primaryColor);
+  margin: 0.6rem auto 1.2rem auto;
+}
+
+.banner-text {
+  margin-bottom: 0;
+}
+
+.banner-btn {
+  display: flex;
+  justify-content: space-between;
+}

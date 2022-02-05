@@ -1,6 +1,6 @@
 footer {
     background-color: var(--mainDark);
-    padding: 20px;
+    padding:0.7rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -9,9 +9,9 @@ footer {
   
   .footer-text {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 2rem;
     color: var(--mainWhite);
-    margin-bottom: 10px;
+    margin-bottom: 0.2rem;
   }
   
   .footer-icons {
@@ -19,7 +19,7 @@ footer {
   }
   
   .footer-icons .fa {
-    margin-right: 10px;
+    margin-right: 1.2rem;
     color: var(--mainWhite);
     transition: transform 2s;
   }

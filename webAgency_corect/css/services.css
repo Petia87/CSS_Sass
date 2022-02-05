@@ -1,4 +1,4 @@
-#services {
+.services {
     min-height: 100vh;
     background: url(../images/services.jpeg);
     background-attachment: fixed;
@@ -10,10 +10,10 @@
   
   }
   
-  #services .title h1{
+  .services .title h1{
    margin-bottom: 0;
   }
-  #services .title{
+  .services .title{
     margin-bottom: 1.2rem;
   }
   .services-container {

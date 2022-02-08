@@ -1,0 +1,48 @@
+/*skills section*/
+.skills {
+  padding: 4rem 0;
+  background-color: var(--mainDark);
+
+  &-container {
+    max-width: 95vw;
+    margin: 0 auto;
+  }
+
+  &-item {
+    text-align: center;
+    margin: 4rem 0;
+  }
+
+  &-item .fa {
+    font-size: 4rem;
+    color: var(--secondaryColor);
+    letter-spacing: 1px;
+  }
+
+  &-item h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 2rem 0;
+    color: var(--primaryColor);
+    text-transform: uppercase;
+  }
+
+  &-item p {
+    width: 75%;
+    margin: 0 auto;
+    color: var(--mainWhite);
+  }
+}
+@media screen and (min-width: 576px) {
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

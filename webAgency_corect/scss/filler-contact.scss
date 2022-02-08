@@ -1,0 +1,31 @@
+.filler-contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/filler.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--mainGrey);
+  }
+
+ /* button {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+    padding: 1rem 2rem;
+    background: transparent;
+  }
+  button:hover {
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
+  }*/
+}

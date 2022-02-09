@@ -2,28 +2,54 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
-  <title>Responsive Theme</title>
-  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./dist/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project</title>
+  <!--  main.css-->
+  <link rel="stylesheet" href="./dist/styles.css" />
+  <!--  font awesome icons-->
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+  <!--  Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- NAV-->
-  <nav>
-    <ul class="nav-items">
-      <li><a href="." class="logo">Web Agency <i class="fa fa-arrow-down"></i></a></li>
-      <li><a href="." class="nav-link">Home</a></li>
-      <li><a href="." class="nav-link">Skills</a></li>
-      <li><a href="." class="nav-link">Services</a></li>
-      <li><a href="." class="nav-link">Portfolio</a></li>
-      <li><a href="." class="nav-link">Work</a></li>
-    </ul>
-  </nav>
-  <!--  end of NAV-->
-
-  <!--BANNER -->
+  <header class="header">
+    <!--  nav-->
+    <nav>
+      <div class="nav-top">
+        <img class="nav-logo" src="./images/logo2.png" alt=""></a> 
+        <div id="menu-btn">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <!--  nav links-->
+      <ul id="links">
+        
+        <li class="nav-link"><a href="#">Home</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+        
+      </ul>
+    </nav>
+    <!--  endnav-->
+    <section class="banner">
+      <div class="banner-box">
+        <h1 class="banner-title">Web Agency</h1>
+        <div class="banner-underline"></div>
+        <div class="banner-btn">
+          <button class="btn-transp" type="button">Buy Now</button>
+          <button class="btn-transp" type="button">About Us</button>
+        </div>
+            </div>
+    </section>
+  </header>
+  <!--end of header-->
+  <!--
   <header class="banner">
     <div class="banner-title ">
       <h1 class="banner-text title">Web Agency</h1>
@@ -34,7 +60,7 @@
       </div>
     </div>
   </header>
-  <!--  end of banner-->
+-->
   <!--  SKILLS section-->
   <section class="skills">
     <div class="skills-container">
@@ -262,7 +288,7 @@
   </section>
   <!--end of post section-->
   <!--footer section-->
-  <footer class="footer" >
+  <footer class="footer">
     <div class="footer-text">
       <h4>Copyright &copy; 2022. All rigths reserved</h4>
     </div>
@@ -275,6 +301,9 @@
 
 
   </footer>
+  <!--Jquer-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

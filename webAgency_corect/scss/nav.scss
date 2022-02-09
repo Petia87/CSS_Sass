@@ -1,5 +1,5 @@
 /*nav*/
-nav ul {
+/*nav ul {
     list-style-type: none;
     border-top: 6px solid var(--primaryColor);
     background-color: var(--mainDark);
@@ -54,4 +54,147 @@ nav ul {
       display: none;
     }
   }
-  
+  */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-items: baseline;
+  min-height: 100vh;
+}
+
+nav {
+  flex: 0 0 auto;
+}
+.nav-logo {
+  width: 6rem;
+  display: flex;
+  padding: 0;
+}
+
+.banner {
+  flex: 1 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: block;
+  color:  var(--primaryColor);
+  background: transparent;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  transition: color 1s ease, background 1s ease, padding 1s ease;
+}
+
+nav ul li a:hover {
+  color:  var(--mainWhite);
+  padding-left: 8rem;
+  background:var(--primaryColor);
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.nav-logo {
+  display: inline;
+  padding: 0;
+}
+
+.nav-top h3 {
+  font-size: 30px;
+  padding: 5px;
+  color:  var(--primaryColor);
+  border: 3px solid;
+  transition: color 2s ease, background 2s ease;
+}
+
+.nav-top h3:hover {
+  background:  var(--primaryColor);
+  color:  var(--mainWhite);
+}
+
+#menu-btn {
+  padding: 5px;
+  border: 2px solid  var(--primaryColor);
+  cursor: pointer;
+  align-self: center;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  height: 5px;
+  width: 35px;
+  background-color:  var(--primaryColor);
+  margin: 5px 0;
+  transition: transform 1s ease;
+}
+
+.turn .bar1 {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.turn .bar2 {
+  opacity: 0;
+}
+
+.turn .bar3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+
+@media screen and (min-width: 690px) {
+  nav {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    position: relative;
+  }
+ #menu-btn {
+    display: none;
+  }
+ 
+  .nav-logo {
+    position: absolute;
+    bottom: 1px;
+    width: 5rem;
+  }
+  nav ul {
+    flex: 1 1 auto;
+    display: flex !important;
+    /*    important*/
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    padding-top: 0.5rem;
+  }
+  nav ul li {
+    flex: 1 0 125px;
+  }
+
+  nav ul .icon {
+    flex: 0 0 20px;
+    display: none;
+  }
+  nav ul li .link-icon {
+    color:  var(--mainWhite);
+    background:var(--primaryColor);
+  }
+  nav ul li .link-icon:hover {
+    background: var(--primaryColor);
+  }
+  nav ul a {
+    text-align: center;
+  }
+  nav ul a:hover {
+    padding: 10px !important;
+  }
+  .nav-top {
+    padding: 0px;
+  }
+}
+

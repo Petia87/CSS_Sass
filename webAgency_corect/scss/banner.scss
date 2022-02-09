@@ -1,31 +1,26 @@
+/*###############Banner################*/
+
 .banner {
   min-height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background-banner.jpg);
   background-attachment: fixed;
-  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &-title {
-    color: var(--mainWhite);
-    font-style: italic;
-  }
-
-  &-underline {
-    width: 12.5rem;
-    border: 3px solid var(--primaryColor);
-    margin: 0.6rem auto 1.2rem auto;
-  }
-
-  &-text {
-    margin-bottom: 0;
-  }
-
-  &-btn {
-    display: flex;
-    justify-content: space-between;
-  }
 }
+
+.banner-box {
+  color: var(--mainWhite);
+  text-align: center;
+}
+
+
+.banner-underline {
+  width: 200px;
+  margin: 10px auto;
+  border: 3px solid var(--primaryColor);
+}
+

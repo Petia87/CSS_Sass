@@ -23,27 +23,26 @@
 .img-container {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-}
 
-.img-container .fa {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
-  color: var(--primaryColor);
-  opacity: 0;
-  transition: opacity 4s;
-}
+  & .fa {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: var(--primaryColor);
+    opacity: 0;
+    transition: opacity 4s;
+  }
 
-.img-container:hover img {
-  opacity: 0.4;
-}
+  &-container:hover img {
+    opacity: 0.4;
+  }
 
-.img-container:hover .fa {
-  opacity: 1;
+  &-container:hover .fa {
+    opacity: 1;
+  }
 }
-
 .text-container {
   padding: 10px 5px 30px 5px;
 

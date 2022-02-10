@@ -3,13 +3,10 @@
   }
   .tour-card {
     margin-bottom: 4rem;
-    -webkit-box-shadow: var(--lightShadow);
     box-shadow: var(--lightShadow);
-    -webkit-transition: var(--mainTransition);
     transition: var(--mainTransition);
   }
   .tour-card:hover {
-    -webkit-box-shadow: var(--darkShadow);
     box-shadow: var(--darkShadow);
   }
   .tour-img-container {
@@ -34,14 +31,9 @@
     text-transform: capitalize;
   }
   .tour-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
   }
   .tour-details p {
     line-height: 0.2;
@@ -50,7 +42,6 @@
     letter-spacing: 0.02rem;
   }
   .tour-country {
-    -ms-flex-item-align: center;
     align-self: center;
   }
   .tour-link {
@@ -58,25 +49,16 @@
   }
   @media screen and (min-width: 768px) {
     .featured-center {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
       justify-content: space-between;
-      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
     }
     .tour-card {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(50% - 1rem);
-      flex: 0 0 calc(50% - 1rem);
+       flex: 0 0 calc(50% - 1rem);
     }
   }
   @media screen and (min-width: 1170px) {
     .tour-card {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(33.3333% - 1rem);
       flex: 0 0 calc(33.3333% - 1rem);
     }
   }

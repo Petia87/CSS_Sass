@@ -10,17 +10,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &-box {
+    color: var(--mainWhite);
+    text-align: center;
+  }
+
+  &-underline {
+    width: 200px;
+    margin: 10px auto;
+    border: 3px solid var(--primaryColor);
+  }
 }
-
-.banner-box {
-  color: var(--mainWhite);
-  text-align: center;
-}
-
-
-.banner-underline {
-  width: 200px;
-  margin: 10px auto;
-  border: 3px solid var(--primaryColor);
-}
-

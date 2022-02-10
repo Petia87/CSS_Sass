@@ -134,12 +134,10 @@ a {
   align-items: center;
   justify-content: center;
 }
-
 .banner-box {
   color: var(--mainWhite);
   text-align: center;
 }
-
 .banner-underline {
   width: 200px;
   margin: 10px auto;
@@ -267,25 +265,22 @@ a {
   min-height: 100vh;
 }
 
-nav {
-  flex: 0 0 auto;
+.banner {
+  flex: 1 0 auto;
 }
 
+.nav {
+  flex: 0 0 auto;
+}
 .nav-logo {
   width: 6rem;
   display: flex;
   padding: 0;
 }
-
-.banner {
-  flex: 1 0 auto;
-}
-
-nav ul {
+.nav ul {
   list-style-type: none;
 }
-
-nav ul li a {
+.nav ul li a {
   display: block;
   color: var(--primaryColor);
   background: transparent;
@@ -294,35 +289,19 @@ nav ul li a {
   font-size: 1.2rem;
   transition: color 1s ease, background 1s ease, padding 1s ease;
 }
-
-nav ul li a:hover {
+.nav ul li a:hover {
   color: var(--mainWhite);
   padding-left: 8rem;
   background: var(--primaryColor);
 }
-
 .nav-top {
   display: flex;
   justify-content: space-between;
   padding: 0;
 }
-
 .nav-logo {
   display: inline;
   padding: 0;
-}
-
-.nav-top h3 {
-  font-size: 30px;
-  padding: 5px;
-  color: var(--primaryColor);
-  border: 3px solid;
-  transition: color 2s ease, background 2s ease;
-}
-
-.nav-top h3:hover {
-  background: var(--primaryColor);
-  color: var(--mainWhite);
 }
 
 #menu-btn {
@@ -355,25 +334,23 @@ nav ul li a:hover {
 }
 
 @media screen and (min-width: 690px) {
-  nav {
+  #menu-btn {
+    display: none;
+  }
+
+  .nav {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
     padding: 0 20px;
     position: relative;
   }
-
-  #menu-btn {
-    display: none;
-  }
-
   .nav-logo {
     position: absolute;
     bottom: 1px;
     width: 5rem;
   }
-
-  nav ul {
+  .nav ul {
     flex: 1 1 auto;
     display: flex !important;
     /*    important*/
@@ -381,33 +358,26 @@ nav ul li a:hover {
     margin-left: 5rem;
     padding-top: 0.5rem;
   }
-
-  nav ul li {
+  .nav ul li {
     flex: 1 0 125px;
   }
-
-  nav ul .icon {
+  .nav ul .icon {
     flex: 0 0 20px;
     display: none;
   }
-
-  nav ul li .link-icon {
+  .nav ul li .link-icon {
     color: var(--mainWhite);
     background: var(--primaryColor);
   }
-
-  nav ul li .link-icon:hover {
+  .nav ul li .link-icon:hover {
     background: var(--primaryColor);
   }
-
-  nav ul a {
+  .nav ul a {
     text-align: center;
   }
-
-  nav ul a:hover {
+  .nav ul a:hover {
     padding: 10px !important;
   }
-
   .nav-top {
     padding: 0px;
   }
@@ -435,7 +405,6 @@ nav ul li a:hover {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
-
 .img-container .fa {
   position: absolute;
   left: 50%;
@@ -446,12 +415,10 @@ nav ul li a:hover {
   opacity: 0;
   transition: opacity 4s;
 }
-
-.img-container:hover img {
+.img-container-container:hover img {
   opacity: 0.4;
 }
-
-.img-container:hover .fa {
+.img-container-container:hover .fa {
   opacity: 1;
 }
 
